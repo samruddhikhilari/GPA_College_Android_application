@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".automobile">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="399dp"
+        android:layout_height="78dp"
+        android:background="#0B1D55"
+        android:gravity="center"
+        android:text="Automobile Engineering"
+        android:textColor="#F6F2F2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="385dp"
+        android:layout_height="722dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="281dp"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/au" />
+
+            <TextView
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:text="The department of Automobile Engineering was established in academic year 2008-2009. The aim is to impart technical education in the field of Mumbai curriculum for the award of Diploma in Automobile Engineering. The department is having well-furnished excellent infrastructure, well equipped laboratories and departmental library containing number of reference books along with National and International Journals, Magazines and e – learning resource material."
+                android:textSize="22sp" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="397dp"
+                android:layout_height="63dp"
+                android:layout_margin="10dp"
+                android:background="#950B6D"
+                android:onClick="faculties"
+                android:text="Faculties"
+                android:textColor="#FAF6F6"
+                android:textSize="24sp" />
+        </LinearLayout>
+            </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

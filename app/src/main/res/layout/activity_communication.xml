@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".communication">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="403dp"
+        android:layout_height="114dp"
+        android:background="#0B1D55"
+        android:gravity="center"
+        android:text="Electronics and Communication"
+        android:textColor="#F6F2F2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="387dp"
+        android:layout_height="695dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="281dp"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ej" />
+
+            <TextView
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:text="Electronics and Telecommunication Engineering department is established inyear 2008, with an intake of 60 students, in the sprawling and beautiful campus of Government Polytechnic Awasari(Kh). The department has well qualified and experienced faculty members (HOD+8) to cater the academic requirement of the students. It has laboratories (total 9) to conduct all the practical’s prescribed in MSBTE curriculum."
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="397dp"
+                android:layout_height="63dp"
+                android:layout_margin="10dp"
+                android:background="#950B6D"
+                android:onClick="faculties"
+                android:text="Faculties"
+                android:textColor="#FAF6F6"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

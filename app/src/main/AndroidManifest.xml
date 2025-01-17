@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.College_Android"
+        tools:targetApi="31" >
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".college_staff"
+            android:exported="false" />
+        <activity
+            android:name=".civil_faculties"
+            android:exported="false" />
+        <activity
+            android:name=".automobile_faculties"
+            android:exported="false" />
+        <activity
+            android:name=".communication_faculties"
+            android:exported="false" />
+        <activity
+            android:name=".electrical_faculties"
+            android:exported="false" />
+        <activity
+            android:name=".computer_faculties"
+            android:exported="false" />
+        <activity
+            android:name=".faculties"
+            android:exported="false" />
+        <activity
+            android:name=".civil"
+            android:exported="false" />
+        <activity
+            android:name=".automobile"
+            android:exported="false" />
+        <activity
+            android:name=".communication"
+            android:exported="false" />
+        <activity
+            android:name=".electrical"
+            android:exported="false" />
+        <activity
+            android:name=".computer"
+            android:exported="false" />
+        <activity
+            android:name=".information_technology"
+            android:exported="false" />
+        <activity
+            android:name=".educational_details"
+            android:exported="false" />
+        <activity
+            android:name=".events"
+            android:exported="false" />
+        <activity
+            android:name=".departments"
+            android:exported="false" />
+        <activity
+            android:name=".college"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

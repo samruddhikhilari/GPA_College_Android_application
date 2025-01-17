@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="88dp"
+        android:layout_margin="20dp"
+        android:background="#06094A"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="502dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Goverment Polytechnic Awsari(KH)"
+            android:textColor="#F6F3F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="308dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="search here"
+        android:inputType="text"
+        android:textColor="#060F49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="search button"
+        android:src="@android:drawable/btn_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:onClick="search"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="413dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="118dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/imageButton3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="12dp"
+            android:text="College"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="192dp"
+            android:layout_height="157dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="Departments"
+            android:onClick="departments"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/department" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="152dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/imageButton4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="9dp"
+            android:text="Departments"
+            android:textSize="24dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="191dp"
+            android:layout_height="151dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:contentDescription="College"
+            android:onClick="college"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/college2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.356">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="184dp"
+            android:layout_height="159dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Events"
+            android:onClick="events"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/event1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="136dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/imageButton5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="Events"
+            android:textSize="24dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="195dp"
+            android:layout_height="166dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="Educational Details"
+            android:onClick="educational_details"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="163dp"
+            android:layout_height="57dp"
+            android:layout_below="@+id/imageButton6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:gravity="center"
+            android:text="Educational Details"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="699dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

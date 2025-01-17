@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".educational_details">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#050C49"
+        android:gravity="center"
+        android:text="Educational Details"
+        android:textColor="#F4F0F0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.639">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:onClick="calendar"
+                android:text="Academic Calendar"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="1154dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="academic calendar"
+                android:onClick="calendar"
+                android:scaleType="fitStart"
+                android:visibility="gone"
+                app:srcCompat="@drawable/second" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="Close"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:onClick="close1"/>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_margin="25dp"
+                android:layout_marginTop="20dp"
+                android:background="#A607A3"
+                android:gravity="center"
+                android:onClick="one"
+                android:text="Time Table"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:onClick="one"
+                android:text="FY TimeTable"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="283dp"
+                android:contentDescription="FY time table"
+                android:onClick="one"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:srcCompat="@drawable/fy" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="Close"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:onClick="close2"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="25dp"
+                android:onClick="two"
+                android:text="SY TimeTable"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
+                android:contentDescription="SY time table"
+                android:onClick="two"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:srcCompat="@drawable/sy" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="Close"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:onClick="close3"/>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_margin="25dp"
+                android:onClick="three"
+                android:text="TY TimeTable"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:contentDescription="TY time table"
+                android:onClick="three"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ty" />
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="Close"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:onClick="close4"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

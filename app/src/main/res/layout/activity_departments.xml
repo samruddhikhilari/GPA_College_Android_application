@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".departments">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="402dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:background="#081667"
+        android:gravity="center"
+        android:text="Departments"
+        android:textColor="#F4EFEF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="437dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="72dp"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="140dp"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="146dp"
+                android:gravity="center"
+                android:text="IF"
+                android:textSize="34sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="176dp"
+                android:layout_height="143dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="9dp"
+                android:contentDescription="Computer "
+                android:onClick="computer"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/co" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="91dp"
+                android:layout_height="62dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="138dp"
+                android:layout_marginEnd="65dp"
+                android:gravity="center"
+                android:text="CO"
+                android:textSize="34sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="179dp"
+                android:layout_height="144dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="216dp"
+                android:contentDescription="Electrical"
+                android:onClick="electrical"
+                app:srcCompat="@drawable/ee" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="120dp"
+                android:layout_height="61dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="377dp"
+                android:layout_marginEnd="255dp"
+                android:gravity="center"
+                android:text="EE"
+                android:textSize="34sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="170dp"
+                android:layout_height="147dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="210dp"
+                android:layout_marginEnd="24dp"
+                android:contentDescription="EJ"
+                android:onClick="communication"
+                app:srcCompat="@drawable/ej" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="390dp"
+                android:layout_marginEnd="38dp"
+                android:gravity="center"
+                android:text="EJ"
+                android:textSize="34sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="177dp"
+                android:layout_height="152dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="463dp"
+                android:contentDescription="Automobile"
+                android:onClick="automobile"
+                app:srcCompat="@drawable/au" />
+
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="174dp"
+                android:layout_height="161dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="457dp"
+                android:contentDescription="civil"
+                android:onClick="civil"
+                app:srcCompat="@drawable/ce" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="140dp"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="642dp"
+                android:gravity="center"
+                android:text="AU"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="128dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="263dp"
+                android:layout_marginTop="639dp"
+                android:gravity="center"
+                android:text="CE"
+                android:textSize="34sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton17"
+                android:layout_width="174dp"
+                android:layout_height="144dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="Information Technology"
+                android:onClick="information_technology"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/department" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

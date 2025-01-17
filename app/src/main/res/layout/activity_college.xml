@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".college">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="407dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="4dp"
+        android:background="#07145E"
+        android:gravity="center"
+        android:text="Government Polytechnic Awsari(KH)"
+        android:textColor="#F1EEEE"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+         android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="130dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.355"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/college2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="437dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|start|top"
+                android:padding="25dp"
+                android:text="The Government Polytechnic, Awasari Kh is a public polytechnic college in Awasari Kh, Pune, Maharashtra. It is an institution run by the Government of Maharashtra and offers diploma programs in engineering and technology. The college is accredited by the All India Council for Technical Education (AICTE)and affiliated with the Maharashtra State Board of Technical Education (MSBTE)."
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="532dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="397dp"
+                android:layout_height="63dp"
+                android:layout_margin="10dp"
+                android:background="#950B6D"
+                android:onClick="faculties"
+                android:text="Staff"
+                android:textColor="#FAF6F6"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
