@@ -78,5 +78,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For any questions or suggestions, please contact:
-- **Email**: [your-email@example.com]
-- **GitHub**: [GitHub Profile](https://github.com/your-profile)
+- **Email**: [samruddhikhilari630@gmail.com]
+- **GitHub**: [GitHub Profile](https://github.com/samruddhikhilari/)
